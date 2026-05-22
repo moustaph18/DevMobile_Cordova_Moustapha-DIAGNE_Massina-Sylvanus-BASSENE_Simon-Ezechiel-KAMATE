@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactel</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- home Page -->
+    <div id="homePage" data-role="page">
+        <div data-role="header">
+            <h1>Contactel</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a data-role="button" href="#" data-icon="plus" data-iconpos="right">Ajouter</a>
+            <listview id="contactlist" data-role="listview" data-filter="true" data-filter-placeholder="Recherche contacts" data-inset="true">
+               
+            </listview>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>M2GLSI & MAI 2026</h4>
+        </div>
+    </div>
+
+    <!-- Details page -->
+    <div id="detailsPage" data-role="page">
+        <div data-role="header">
+        <a data-role="button" href="#homePage" data-icon="home" data-iconpos="notext">Ajouter</a>
+            <h1>ContacTel</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="header">
+                <a data-role="button" href="#" data-icon="edit" data-iconpos="notext"></a>
+                <h1>Détails du contact</h1>
+                <a data-role="button" href="#" data-icon="delete" data-iconpos="notext"></a>
+            </div>
+            <listview id="contactDetails" data-role="listview" data-filter="true">
+               
+                 <li>
+                    <h1>Numero</h1>
+                    <p>77 777 77 77</p>
+                </li>
+                <li>
+                    <h1>Email</h1>
+                    <p>moustapha.fall@example.com</p>
+                </li>
+                <li>
+                    <h1>Adresse</h1>
+                    <p>Ngor</p>
+                </li>
+            </listview>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>M2GLSI & MAI 2026</h4>
+        </div>
+    </div>
+
+    <!-- Page edition -->
+    
+
+</body>
+</html>

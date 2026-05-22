@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenTasks</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>SenTasks</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form></form>
+                <label for="task">Ajouter une tâche</label>
+                <input type="text" id="task" >
+                <input type="button" value="Ajouter" onclick="AjouterTache()">
+                <input type="button" value="Reinstaller" onclick="SupprimerTache()">
+            </form>
+            <!-- <ul id="tasklist" data-role="listview"data-inset="true">
+
+            </ul> -->
+            <br>
+            <div data-role="tabs" id="tabs">
+
+            <!-- Barre des onglets -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#en-cours" class="ui-btn-active">⏳ En cours</a></li>
+                    <li><a href="#terminees">✅ Terminées</a></li>
+                </ul>
+            </div>
+
+            <!-- Contenu onglet En cours -->
+            <div id="en-cours" class="ui-body">
+                <ul data-role="listview" id="tasklist" data-inset="true">
+                   
+                </ul>
+            </div>
+
+            <!-- Contenu onglet Terminées -->
+            <div id="terminees" class="ui-body">
+                <ul data-role="listview" id="listviewTaskDone" data-inset="true">
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>M2GLSI - MAI 2026</h1>
+        </div>
+    </div>
+</body>
+</html>
