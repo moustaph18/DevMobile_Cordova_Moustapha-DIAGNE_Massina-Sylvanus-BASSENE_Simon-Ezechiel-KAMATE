@@ -14,9 +14,9 @@ Ce dépôt regroupe **trois applications mobiles** développées avec **Apache C
 
 - **Moustapha DIAGNE**
 - **Massina Sylvanus BASSENE**
-- **Simon Ezechiel KAMATE**
+- **Simon Ezechiele KAMATE**
 
-> M2GLSI — Mai 2026
+> M2GLSI
 
 ---
 
